@@ -99,11 +99,18 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+	background-color: #07111f;
+	background-image:
+		url("images/overlay.png"),
+		radial-gradient(circle at 20% 10%, rgba(0, 120, 255, 0.28), transparent 32%),
+		linear-gradient(rgba(120, 180, 255, 0.12) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(120, 180, 255, 0.12) 1px, transparent 1px);
+	background-size:
+		auto,
+		auto,
+		40px 40px,
+		40px 40px;
+	background-attachment: fixed;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,14 +127,14 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
-		color: rgba(255, 255, 255, 0.65);
+		background-color: #c6f7fb;
+		color: #2f3b46;
 	}
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 17pt;
-		font-weight: 300;
+		font-weight: 400;
 		line-height: 1.65;
 	}
 
@@ -315,7 +322,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #0B1F3A;
 	}
 
 	blockquote {
@@ -3758,6 +3765,24 @@ input, select, textarea {
 				padding: 2.5em 1em 0.5em 1em ;
 			}
 
+		}
+
+		#header {
+			position: relative;
+		}
+
+		#header .pennstate-logo {
+			position: absolute;
+			top: 1em;
+			left: 0.5em;
+			margin: 0;
+			border-radius: 0.5em;
+		}
+
+		#header .pennstate-logo img {
+			width: 300px;
+			height: auto;
+			display: block;
 		}
 
 /* Wrapper */
