@@ -3883,3 +3883,8 @@ input, select, textarea {
 	height: auto;
 	display: block;
 }
+.opening-page ul li {
+	font-size: 1.1em;
+	line-height: 1.65;
+	margin-bottom: 0.35em;
+}
